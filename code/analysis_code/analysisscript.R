@@ -14,7 +14,7 @@ library(here) #for data loading/saving
 data_location <- here::here("data","processed_data","processeddata.rds")
 
 #load data. 
-mydata <- readRDS(data_location)
+myd
 
 ######################################
 #Data exploration/description
