@@ -1,7 +1,7 @@
 ---
-title: "Example Manuscript Template for a Data Analysis Project"
+title: "Module 2 Exercise"
 subtitle: ""
-author: Andreas Handel
+author: Group 3
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: article
@@ -15,11 +15,9 @@ bibliography: ../references.bib
 csl: ../apa.csl
 ---
 
-The structure below is a possible setup for a data analysis project (including the course project). For a manuscript, adjust as needed.
-
 
 # Summary/Abstract
-_Write a summary of your project._
+This is the Module 2 Exercise for Group 3. 
 
 
 # Introduction 
@@ -64,12 +62,21 @@ knitr::kable(resulttable, caption = 'Data summary table.')
 ```
 
 
-Figure \@ref(fig:resultfigure) shows a scatterplot figure produced by one of the R scripts.
+Figure \@ref(fig:resultfigure1) shows a scatterplot figure produced by one of the R scripts. Figure \@ref(fig:resultfigure2) shows a scatterplot figure examining a new numerical variable, systolic blood pressure, vs. weight. Figure \@ref(fig:resultfigure3) shows a boxplot figure examining height vs a new categorical variable, mode of arrival. 
 
-```{r resultfigure,  fig.cap='Analysis figure.', echo=FALSE}
+```{r resultfigure1,  fig.cap='Analysis figure.', echo=FALSE}
 knitr::include_graphics("../../results/resultfigure.png")
 ```
 
+
+```{r resultfigure2, fig.cap='Systolic Blood Pressure vs. Weight', echo=FALSE}
+knitr::include_graphics("../../results/scatterplotfigure.png")
+```
+
+
+```{r resultfigure3, fig.cap='Height vs. Mode of Arrival', echo=FALSE}
+knitr::include_graphics("../../results/boxplotfigure.png")
+```
 
 ## Full analysis
 
